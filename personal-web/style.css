@@ -4,7 +4,7 @@ body,ul,li{
     padding: 0;
     list-style: none;
     color: #fff;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -95,7 +95,7 @@ a{
 /* Main */
 
 .main{
-    width: 100%;
+    width: 1920px;
     height: 1080px;
 }
 
@@ -120,4 +120,105 @@ a{
 .main .title-box .title{
     position: absolute;
     word-spacing: 40px;
+}
+
+/* Branding */
+.branding{
+    width: 1920px;
+    height: 1080px;
+    background-color: #222;
+}
+
+.branding .branding-img{
+    background-image: url(./img/3d-logo.png);
+    width: 1920px;
+    height: 1080px;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+/* Branding-Concept */
+
+.concept{
+    width: 1920px;
+    height: 1080px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.concept .concept-inner{
+    width: 1280px;
+    height: 430px;
+    display: flex;
+    margin: 0 auto;
+
+} 
+
+.concept .concept-inner .text-box{
+    width: 643px;
+    height: 303px;
+    margin-top: 45px;
+}
+.concept .concept-inner .text-box .title{
+    font-size: 55px;
+}
+.concept .concept-inner .text-box .text{
+    font-size: 18px;
+    margin-top: 60px;
+    line-height: 45px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.concept .concept-inner .concept-img{
+    background-image: url(./img/3d-logo-s.png);
+    width: 645px;
+    height: 423px;
+    background-repeat: no-repeat;
+    margin-top: 14px;
+    background-position: right;
+}
+/* Logo-Design */
+
+.logo-design {
+    width: 1920px;
+    height: 1080px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-design .logo-inner{
+    width: 1280px;
+    height: 430px;
+    display: flex;
+    margin: 0 auto;
+
+} 
+
+.logo-design .logo-inner .text-box{
+    width: 643px;
+    height: 303px;
+    margin-top: 45px;
+}
+.logo-design .logo-inner .text-box .title{
+    font-size: 55px;
+}
+.logo-design .logo-inner .text-box .text{
+    font-size: 18px;
+    margin-top: 60px;
+    line-height: 45px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.logo-design .logo-inner .logo-img{
+    font-size: 109px;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    align-items: center;
+    width: 503px;
+    justify-content: space-between;
 }
