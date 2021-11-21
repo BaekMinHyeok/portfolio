@@ -1,28 +1,45 @@
 // Full page 임시
 
-// $(document).ready(function(){
+$(document).ready(function(){
   
-//     $("#fullpage").fullpage({
+    $("#fullpage").fullpage({
       
-//       navigation: true ,
-//       navigationPosition: 'left' ,
+      navigation: true ,
+      navigationPosition: 'right' ,
       
-//       navigationTooltips: [        
-//         "test",
-//         "test2",
-//         "test3",
-//         'test4'        
-//       ],
-//       loopHorizontal: false,
+      navigationTooltips: [        
+        "Logo",
+        "Brand Concept",
+        "Logo Design",
+        'test4'        
+      ],
+      loopHorizontal: false,
 
-//       controlArrows: false,
-//       slidesNavigation: true,
-//       slidesNavPosition: 'top',
-//       keyboardScrolling: true,
+      controlArrows: false,
+      slidesNavigation: true,
+      slidesNavPosition: 'top',
+      keyboardScrolling: true,
+      
 
-//     });
-// });
+      afterLoad : function(origin, destination, direction){
+        var leavingSection = this;
+  
+        //3페이지 이동시 스크롤 애니메이션
+        if(destination.index == 2){
+          $("#fullpage .logo-design .logo-inner .logo-img").addClass("active");
+          $("#fullpage .logo-design .logo-inner .text-box").addClass("active");
+        } else {
+          $("#fullpage .logo-design .logo-inner .logo-img").removeClass("active");
+          $("#fullpage .logo-design .logo-inner .text-box").removeClass("active");        
+        }
+  
+        
+      }
 
+    });
+
+    
+});
 
 
 
@@ -52,35 +69,3 @@
 
 
 
-// 스크롤 효과
-
-$(document).ready(function() {
-    $(window).scroll( function(){
-        $('.logo-inner .logo-img').each( function(i){
-            
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','margin-right':'320px'},1000);
-            }
-            
-        }); 
-    });
-});
-
-
-$(document).ready(function() {
-    $(window).scroll( function(){
-        $('.logo-inner .text-box').each( function(i){
-            
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','margin-left':'320px'},1000);
-            }
-            
-        }); 
-    });
-});
