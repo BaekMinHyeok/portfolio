@@ -4,7 +4,7 @@ body,ul,li{
     padding: 0;
     list-style: none;
     color: #fff;
-    /* overflow-x: hidden; */
+    overflow: hidden;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -18,10 +18,6 @@ a{
 .title{
     font-family: 'Noto Serif Display', serif;
 }
-
-/* body::-webkit-scrollbar {
-    display: none;
-} */
 
 /* 커스텀 */
 
@@ -58,11 +54,11 @@ a{
 }
 
 .top-bar .top-menu .menu{
-   width: 500px;
-   height: 60px;
    font-size: 18px;
    display: flex;
    position: relative;
+   bottom: 31px;
+   left: 33px;
 }
 .top-bar .top-menu .menu .menu-circle{
     position: absolute;
@@ -70,7 +66,7 @@ a{
     height: 5px;
     border-radius: 50%;
     background-color: #fff;
-    top: 0%;
+    top: 28%;
     left: 46%;
     transition: left .3s, width .3s;
     
@@ -79,37 +75,22 @@ a{
 
 .top-bar .top-menu .menu ul{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     width: 100%;
+    height: 120px;
 
 }
 .top-bar .top-menu .menu ul li{
     display: flex;
-    padding: 0 57px;
-    padding-right: 0;
-
 }
 .top-bar .top-menu .menu ul li a{
     position: relative;
     height: 32px;
     display: flex;
     align-items: flex-end;
+    padding: 0 29px;
 }
 
-
-
-
-/* .top-bar .top-menu .menu ul li:hover a::before{
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: #fff;
-    top: 0%;
-    left: 46%;
-} */
 
 /* Main */
 
@@ -146,6 +127,7 @@ a{
     width: 1920px;
     height: 100%;
     background-color: #222;
+    position: relative;
 }
 
 .branding .branding-img{
@@ -154,6 +136,8 @@ a{
     height: 100%;
     background-repeat: no-repeat;
     background-position:center;
+    position: absolute;
+    top: 56px;
 }
 
 /* Branding-Concept */
@@ -168,18 +152,19 @@ a{
 
 }
 
-.concept .concept-inner{
-    width: 1280px;
-    height: 430px;
-    display: flex;
-    margin: 0 auto;
 
-} 
 
 .concept .concept-inner .text-box{
-    width: 643px;
-    height: 303px;
-    margin-top: 45px;
+    left: -500px; 
+    bottom: 36%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.concept .concept-inner .text-box.active{
+    left: 320px;
+    opacity: 1;
 }
 .concept .concept-inner .text-box .title{
     font-size: 55px;
@@ -196,8 +181,16 @@ a{
     width: 645px;
     height: 423px;
     background-repeat: no-repeat;
-    margin-top: 14px;
-    background-position: right;
+    right: -500px; 
+    bottom: 277px;
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.concept .concept-inner .concept-img.active{
+    right: 268px;
+    opacity: 1;
 }
 /* Logo-Design */
 
@@ -210,23 +203,16 @@ a{
     justify-content: center;
 }
 
-.logo-design .logo-inner{
-    width: 100%;
-    height: 430px;
-    display: flex;
-
-} 
 
 .logo-design .logo-inner .text-box{
-    width: 100%;
-    height: 303px;
-    margin-top: 45px;
-    margin-left: -500px;
+    left: -500px; 
+    bottom: 33%;
+    position: absolute;
     opacity: 0;
     transition: 0.5s;
 }
 .logo-design .logo-inner .text-box.active{
-    margin-left: 320px; 
+    left: 320px;
     opacity: 1;
 }
 .logo-design .logo-inner .text-box .title{
@@ -238,25 +224,28 @@ a{
     line-height: 45px;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
-.logo-design .logo-inner .logo-img{
-    background-image:url(./img/calmsea1.png) ;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 75px;
-    margin-right: -870px;
+.logo-design .logo-inner .slide-box {
+    right: -500px; 
+    bottom: 52%;
     opacity: 0;
     transition: 0.5s;
-
+    position: absolute;
 }
 
-.logo-design .logo-inner .logo-img.active{
-    margin-right: 320px;
+.logo-design .logo-inner .slide-box.active{
+    right: 848px;
     opacity: 1;
 }
+
+.logo-design .logo-inner .slide-box .slider{
+    position: relative;
+}
+
+
+.logo-design .logo-inner .slide-box .slider p{
+    position: absolute;
+}
+
+
 
 
