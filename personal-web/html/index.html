@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaekMinHyeok</title>
+
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../style.css">
+    
+    <!-- js -->
+    <script src="../script/script.js"></script>
+</head>
+<body>
+    <!-- Menu -->
+    <div id="header"></div>
+    <!-- Main -->
+    <div class="main">
+        <div class="main-img">
+            <div class="title-box">
+                <div class="title">CALM  SEA</div>
+               </div>
+        </div>   
+    </div>
+    <!-- 공통메뉴 js -->
+    <script>
+        $(document).ready(function () {
+            $("#header").load("./header.html", function () {
+            //페이지 별로 다른 메뉴 css 적용도 가능
+                document.getElementById("sub_nav").classList.add("show");
+            });
+        })
+    </script>
+</body>
+</html>

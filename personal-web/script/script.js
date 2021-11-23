@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
 
+
 //   메뉴 원 슬라이드
 
 function TopBar__init(){
@@ -37,8 +38,11 @@ TopBar__init();
       navigationTooltips: [        
         "Logo",
         "Brand Concept",
-        "Logo Design",       
+        "Logo Design",
+        'Color Typo',       
       ],
+
+      
       loopHorizontal: false,
 
       controlArrows: false,
