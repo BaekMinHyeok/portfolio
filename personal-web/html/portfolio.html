@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 풀페이지 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js" integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ==" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css" integrity="sha512-hGBKkjAVJUXoImyDezOKpzuY4LS1eTvJ4HTC/pbxn47x5zNzGA1vi3vFQhhOehWLTNHdn+2Yqh/IRNPw/8JF/A==" crossorigin="anonymous" />
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="../style.css">
+    
+    <!-- js -->
+    <script src="../script/script.js"></script>
+
+</head>
+<body>
+    <!-- Menu -->
+    <div id='header'></div>
+
+    <!-- 공통메뉴 js -->
+<script>
+    $(document).ready(function () {
+        $("#header").load("./header.html", function () {
+        //페이지 별로 다른 메뉴 css 적용도 가능
+            document.getElementById("sub_nav").classList.add("show");
+        });
+    })
+</script>
+</body>
+</html>

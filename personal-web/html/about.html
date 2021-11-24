@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 풀페이지 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js" integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ==" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css" integrity="sha512-hGBKkjAVJUXoImyDezOKpzuY4LS1eTvJ4HTC/pbxn47x5zNzGA1vi3vFQhhOehWLTNHdn+2Yqh/IRNPw/8JF/A==" crossorigin="anonymous" />
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="../style.css">
+    
+    <!-- js -->
+    <script src="../script/script.js"></script>
+
+</head>
+<body>
+    <!-- Menu -->
+    <div id='header'></div>
+
+    <!-- About -->
+    <div id="fullpage">
+    <div class="section about">
+         <div class="about-box">
+             <div class="img"></div>
+         </div>
+         <div class="profile-box">
+             <div class="profile">
+                 <div class="title">Profile</div>
+                 <div class="text">Name <br> Ages <br> Address<br>  E-Mail</div>
+                 <div class="text-sub">백민혁 <br> 1995.09.11 <br> 대전 서구 <br> asea1000@naver.com </div>
+             </div>
+             <div class="license">
+                <div class="title">License</div>
+                <div class="text">MOS Master <br> ACA  Premiere <br> Photoshop</div>
+             </div>
+             <div class="education">
+                <div class="title">Education</div>
+                <div class="text">14 .03 ~ 20. 02  <br> 21. 02  ~ 22 . 01</div>
+                <div class="text-sub">배재대학교 의류패션학과 졸업  <br> SBS아카데미컴퓨터아트학원(웹디자인)</div>
+             </div>
+         </div>
+    </div>
+    <!-- Mind Map -->
+    <div class="section mindmap">
+        <div class="title">Mind Map</div>
+        <div class="map-box">
+        <div class="center">
+            <div class="me">ME</div>
+            <div class="line01"></div>
+            <div class="line02"></div>
+            <div class="line03"></div>
+            <div class="line04"></div>
+        </div>
+        <div class="character">
+            <div class="text">Character</div>
+            <div class="line01"></div>
+            <div class="text-sub">차분한 <br> 평화로운 <br>성실한 <br>공감 <br>배려심이 많은
+            </div>
+        </div>
+        <div class="experience">
+            <div class="text">Experience</div>
+            <div class="top">
+            <div class="line01"></div>
+            <div class="text-main">Work</div>
+            <div class="text-sub">서빙 아르바이트 <br> 건설현장 아르바이트 <br>유니클로 판매직 <br>텔레마케터
+            </div>
+        </div>
+            <div class="right">
+                <div class="text-main">Study</div>
+                <div class="text-sub"> 의류 패션학과<br>Ps/Ai/Pr<br>Mos<br>HTML/ CSS / JS & JQ   </div>
+                <div class="line01"></div>
+            </div>
+            
+        </div> 
+        <div class="goal">
+            <div class="text">Goal</div>
+            <div class="text-sub">명분과 이유가 있는 디자인하기 <br>선택에 후회하지 말기 <br>꾸준히 웹 트렌드 공부하기 <br> 배웠던 디자인툴 숙지하기 <br>Ae, Pr,Xd 및 코딩 공부하기
+            </div>
+            <div class="line01"></div>
+        </div>
+
+        <div class="other">
+            <div class="text">Other</div>
+            <div class="left">
+                <div class="text-main"> Color</div>
+                <div class="text-sub">퍼플<br>블루</div>
+                <div class="line01"></div>
+            </div>
+            <div class="bottom">
+                <div class="text-main">Like</div>
+                <div class="text-sub">영화<br>음악<br>유튜브(여행,게임,가족)</div>
+                <div class="line01"></div>
+            </div>
+        </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+    <!-- 공통메뉴 js -->
+<script>
+    $(document).ready(function () {
+        $("#header").load("./header.html", function () {
+        //페이지 별로 다른 메뉴 css 적용도 가능
+            document.getElementById("sub_nav").classList.add("show");
+        });
+    })
+</script>
+</body>
+</html>

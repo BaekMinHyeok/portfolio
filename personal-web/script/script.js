@@ -14,7 +14,7 @@ function TopBar__init(){
 
       
       $menuItemLine.css({
-          left:left + 50 + 'px',
+          left:left + 58 + 'px',
       });
   });
 
@@ -50,7 +50,7 @@ TopBar__init();
       slidesNavPosition: 'top',
       keyboardScrolling: true,
       
-//3페이지 이동시 스크롤 애니메이션
+//Branding 페이지 이동시 스크롤 애니메이션
       afterLoad : function(origin, destination, direction){
         var leavingSection = this;
   
@@ -70,7 +70,16 @@ TopBar__init();
           $("#fullpage .logo-design .logo-inner .slide-box").removeClass("active");
           $("#fullpage .logo-design .logo-inner .text-box").removeClass("active");        
         }
-  
+  //About 페이지 이동시 스크롤 애니메이션
+
+  if(destination.index == 0){
+    $("#fullpage .about .about-box").addClass("active");
+    $("#fullpage .about .profile-box").addClass("active");
+  } else {
+    $("#fullpage .about .about-box").removeClass("active");
+    $("#fullpage .about .profile-box").removeClass("active");        
+  }
+
         
       }
 
@@ -93,15 +102,15 @@ TopBar__init();
               num = 0;
           }
           $('.slider p').hide();
-          $('.slider p').eq(-num).stop().fadeOut('linear');
-          $('.slider p').eq(num).stop().fadeIn('linear');
+          $('.slider p').eq(-num).stop().fadeOut('slow');
+          $('.slider p').eq(num).stop().fadeIn('slow');
           console.log(num);
           num++;
           
 //            $(".slider").stop().animate({
 //               left : result + 'px'
 //            });
-      },2500);
+      },3000);
   }
   slider();
 

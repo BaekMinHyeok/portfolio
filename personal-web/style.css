@@ -85,13 +85,15 @@ a{
 .top-bar .top-menu .menu ul li{
     display: flex;
     background-color: transparent;
+    width: 120px;
+    margin-right: 9px;
+    justify-content: center;
 }
 .top-bar .top-menu .menu ul li a{
     position: relative;
     height: 32px;
     display: flex;
     align-items: flex-end;
-    padding: 0 29px;
 }
 
 
@@ -358,4 +360,295 @@ a{
     color: transparent;
     -webkit-background-clip: text;
     text-shadow: 0 1px  rgba(2,2,2, .5),5px 5px 11px  rgba(0,0,0, .7);
+}
+/* About */
+.about{
+    top: 60px;
+}
+.about .about-box{
+    position: relative;
+    left: 320px;
+    top: 150px;
+    opacity: 0;
+    transition: 1s; 
+    transition-timing-function: linear
+ 
+}
+.about .about-box.active{
+    opacity: 1;
+    position: relative;
+    left: 320px;
+    top: 0;
+
+}
+
+.about .about-box .img{
+    background-image: url(./img/About-main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+}
+
+.about .profile-box{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    left: 1000px;
+    box-shadow: 15px 21px 15px 0 rgba(0,0,0, .3);   
+    top: 150px;
+    opacity: 0;
+    transition: 1s; 
+    transition-timing-function: linear
+ 
+    
+}
+
+.about .profile-box.active{
+    opacity: 1;
+    position: relative;
+    left: 1000px;
+    top: 0;
+}
+
+.about .profile-box .title{
+    font-size: 30px;
+}
+
+.about .profile-box .text{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.about .profile-box .text-sub{
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 40px; 
+}
+
+
+.about .profile-box .profile{
+    position: relative;
+    top: 47px;
+    left: 9px;
+}
+
+.about .profile-box .profile .title{
+    position: absolute;
+    
+}
+
+.about .profile-box .profile .text{
+    position: absolute;
+    top: 82px;
+
+}
+
+.about .profile-box .profile .text-sub{
+    position: absolute;
+    left: 127px;
+    top: 82px;
+}
+
+.about .license{
+    position: relative;
+    left: 346px;
+    top: 47px;
+}
+
+.about .license .text{
+    position: absolute;
+    top: 82px;
+}
+.about .education{
+    position: relative;
+    top: 350px;
+    left: 9px;
+}
+
+.about .education .title{
+    position: absolute;
+}
+.about .education .text{
+    position: absolute;
+    top: 57px;
+}
+
+.about .education .text-sub{
+    position: absolute;
+    top: 57px;
+    left: 244px;
+}
+
+
+/* Mind Map */
+
+.mindmap .line01,.line02,.line03,.line04{
+    border: 1px solid #fff;
+}
+.mindmap .text{
+    font-size: 28px;
+    text-align: center;
+    width: 161px;
+    height: 161px;
+    border-radius: 50%;
+    line-height: 161px;
+    background: linear-gradient(to bottom, #4CA1AF, #2C3E50 );
+
+
+}
+.mindmap .text-main{
+    font-size: 23px;
+}
+.mindmap .text-sub{
+    font-size: 18px;
+    font-weight: 200;
+    opacity: 70%;
+}
+
+
+
+
+.mindmap{
+    position: relative;
+    left: 320px;
+    top: 240px;
+}
+.mindmap  .title{
+    font-size: 65px;
+}
+
+
+.mindmap .center{
+    position: relative;
+    left: 608px;
+    top: 296px;
+    font-size: 45px;
+}
+.mindmap .center .me{
+    position: absolute;
+}
+.mindmap .map-box .center .line01{
+    position: absolute;
+    width: 124px;
+    transform: rotate(90deg);
+    bottom: 68px;
+    left: -33px;
+
+}   
+
+.mindmap .map-box .center .line02{
+    position: absolute;
+    width: 124px;
+    left: 80px;
+    top: 24px;
+
+} 
+.mindmap .map-box .center .line03{
+    position: absolute;
+    width: 124px;
+    transform: rotate(90deg);
+    left: -33px;
+    top: 121px;
+
+} 
+.mindmap .map-box .center .line04{
+    position: absolute;
+    width: 124px;
+    left: -140px;
+    top: 24px;
+
+} 
+
+
+.mindmap .map-box .character {
+    position: relative;
+    left: 555px; 
+}
+.mindmap .map-box .character .text{
+    position: absolute;
+    top: -10px;
+}
+
+.mindmap .map-box .character .line01{
+    position: absolute;
+    width: 137px;
+    top: 71px;
+    left: -170px;
+}
+
+.mindmap .map-box .character .text-sub{
+    position: absolute;
+    top: 36px;
+    left: -264px;
+
+}
+
+.mindmap .map-box .experience{
+    position: relative;
+    left: 835px;
+    top: 241px;
+}
+
+.mindmap .map-box .experience .top .line01{
+    position: absolute;
+    width: 184px;
+    transform: rotate(90deg);
+    left: -10px;
+    top: 20px;
+    top: -116px;
+
+}
+
+.mindmap .map-box .experience .top .text-main{
+    position: absolute;
+    left: 200px;
+    top: -222px;
+    
+}
+.mindmap .map-box .experience .top .text-main::before{
+    content: '';
+    position: absolute;
+    width: 84px;
+    border: 1px solid #fff;
+    left: -118px;
+    top: 14px;
+
+}
+
+.mindmap .map-box .experience .top .text-sub{
+    position: absolute;
+    left: 200px;
+    top: -183px;
+    line-height: 37px;
+}
+
+.mindmap .map-box .experience .right{
+    position: relative;
+}
+.mindmap .map-box .experience .right .line01{
+    position: absolute;
+    width: 88px;
+    border: 1px solid #fff;
+    bottom: 80px;
+    left: 179px;
+    
+}
+
+.mindmap .map-box .experience .right .text-main{
+    position: absolute;
+    bottom: 67px;
+    left: 284px;
+
+
+}
+
+.mindmap .map-box .experience .right .text-sub{
+    position: absolute;
+    bottom: -95px;
+    left: 284px;
+    line-height: 37px;
+
 }
