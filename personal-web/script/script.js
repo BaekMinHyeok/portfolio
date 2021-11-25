@@ -80,7 +80,51 @@ TopBar__init();
     $("#fullpage .about .profile-box").removeClass("active");        
   }
 
-        
+  //Mind Map 페이지 이동시 스크롤 애니메이션 
+  
+  if(destination.index == 1){
+    $("#fullpage .mindmap .map-box .character .line01").addClass("active");
+    $("#fullpage .mindmap .map-box .character .text-sub").addClass("active");
+    $("#fullpage .mindmap .map-box .experience .top").addClass("active");
+    $("#fullpage .mindmap .map-box .experience .right").addClass("active");
+    $("#fullpage .mindmap .map-box .goal .text-sub").addClass("active");
+    $("#fullpage .mindmap .map-box .goal .line01").addClass("active");
+    $("#fullpage .mindmap .map-box .other .left").addClass("active");
+    $("#fullpage .mindmap .map-box .other .bottom").addClass("active");
+  } else {
+    $("#fullpage .mindmap .map-box .character .line01").removeClass("active");
+    $("#fullpage .mindmap .map-box .character .text-sub").removeClass("active");
+    $("#fullpage .mindmap .map-box .experience .top").removeClass("active");
+    $("#fullpage .mindmap .map-box .experience .right").removeClass("active");
+    $("#fullpage .mindmap .map-box .goal .text-sub").removeClass("active");
+    $("#fullpage .mindmap .map-box .goal .line01").removeClass("active");
+    $("#fullpage .mindmap .map-box .other .left").removeClass("active");
+    $("#fullpage .mindmap .map-box .other .bottom").removeClass("active");        
+  }
+
+//Skills 페이지 이동시 스크롤 애니메이션 
+if(destination.index == 2){
+  $("#fullpage .skills .skills-inner .ps").addClass("active");
+  $("#fullpage .skills .skills-inner .ai").addClass("active");
+  $("#fullpage .skills .skills-inner .vs").addClass("active");
+} else {
+  $("#fullpage .skills .skills-inner .ps").removeClass("active");
+  $("#fullpage .skills .skills-inner .ai").removeClass("active");
+  $("#fullpage .skills .skills-inner .vs").removeClass("active");        
+}
+
+
+//About-Me 페이지 이동시 스크롤 애니메이션
+if(destination.index == 3){
+  $("#fullpage .about-me .inner .illustration").addClass("active");
+  $("#fullpage .about-me .inner .main-text").addClass("active");
+  $("#fullpage .skills .skills-inner .vs").addClass("active");
+} else {
+  $("#fullpage .about-me .inner .illustration").removeClass("active");
+  $("#fullpage .about-me .inner .main-text").removeClass("active");
+  $("#fullpage .skills .skills-inner .vs").removeClass("active");        
+}
+
       }
 
 

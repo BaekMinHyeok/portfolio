@@ -154,6 +154,11 @@ a{
     position: absolute;
     opacity: 0;
     transition: 0.5s;
+    
+}
+.concept .concept-inner .text-box.active{
+    position: absolute;
+    opacity: 1;
 }
 
 .concept .concept-inner .text-box.active{
@@ -514,12 +519,17 @@ a{
 .mindmap{
     position: relative;
     left: 320px;
-    top: 240px;
+    top: -37px;
 }
 .mindmap  .title{
     font-size: 65px;
+    position: absolute;
+    top: 115px;
 }
-
+.mindmap .map-box{
+    position: relative;
+    top: -98px;
+}
 
 .mindmap .center{
     position: relative;
@@ -577,13 +587,34 @@ a{
     width: 137px;
     top: 71px;
     left: -170px;
+    opacity: 0;
+    transition: 2s; 
+    transition-timing-function: linear
+}
+.mindmap .map-box .character .line01.active{
+    position: absolute;
+    opacity: 1;
+    top: 71px;
+    left: -170px;
+
 }
 
 .mindmap .map-box .character .text-sub{
     position: absolute;
     top: 36px;
     left: -264px;
+    line-height: 37px;
+    opacity: 0;
+    transition: 2s; 
+    transition-timing-function: linear
+}
 
+.mindmap .map-box .character .text-sub.active{
+    position: absolute;
+    top: 36px;
+    left: -264px;
+    line-height: 37px;
+    opacity: 1;
 }
 
 .mindmap .map-box .experience{
@@ -591,7 +622,14 @@ a{
     left: 835px;
     top: 241px;
 }
-
+.mindmap .map-box .experience .top{
+    opacity: 0;
+    transition: 2s; 
+    transition-timing-function: linear
+}
+.mindmap .map-box .experience .top.active{
+    opacity: 1;
+}
 .mindmap .map-box .experience .top .line01{
     position: absolute;
     width: 184px;
@@ -626,7 +664,12 @@ a{
 }
 
 .mindmap .map-box .experience .right{
-    position: relative;
+    opacity: 0;
+    transition: 2s; 
+    transition-timing-function: linear
+}
+.mindmap .map-box .experience .right.active{
+    opacity: 1;
 }
 .mindmap .map-box .experience .right .line01{
     position: absolute;
@@ -651,4 +694,385 @@ a{
     left: 284px;
     line-height: 37px;
 
+}
+
+.mindmap .map-box .goal{
+    position: relative;
+    left: 555px; 
+    top: 339px;
+}
+.mindmap .map-box .goal .text{
+    position: absolute;
+}
+
+.mindmap .map-box .goal .text-sub{
+    position: absolute;
+    left: 325px;
+    top: 15px;
+    line-height: 37px;
+    opacity: 0;
+    transition: 2s; 
+    transition-timing-function: linear
+
+}
+.mindmap .map-box .goal .text-sub.active{
+    position: absolute;
+    opacity: 1;
+}
+.mindmap .map-box .goal .line01{
+    position: absolute;
+    width: 120px;
+    top: 82px;
+    left: 185px;
+    opacity: 0;
+    transition: 2s; 
+    transition-timing-function: linear
+}
+
+.mindmap .map-box .goal .line01.active{
+    position: absolute;
+    opacity: 1;
+}
+
+
+
+
+
+.mindmap .map-box .other{
+    position: relative;
+    left: 287px;
+    top: 81px;
+}
+
+.mindmap .map-box .other .left{
+    position: relative;
+    right: 83px;
+    bottom: 98px;
+    opacity: 0;
+    transition: 2s; 
+    transition-timing-function: linear
+}
+.mindmap .map-box .other .left.active{
+    position: relative;
+    opacity: 1;
+
+}
+
+
+.mindmap .map-box .other .left .line01{
+    position: absolute;
+    width: 120px;
+    bottom: -17px;
+    left: -61px;
+}
+
+.mindmap .map-box .other .left .text-main{
+    position: absolute;
+    left: -143px;
+}
+
+.mindmap .map-box .other .left .text-sub{
+    position: absolute;
+    left: -143px;
+    top: 41px;
+    line-height: 45px;
+}
+
+.mindmap .map-box .other .bottom{
+    position: relative;
+    right: -206px;
+    bottom: -60px;
+    opacity: 0;
+    transition: 2s; 
+    transition-timing-function: linear
+}
+
+.mindmap .map-box .other .bottom.active{
+    position: relative;
+    opacity: 1;
+}
+
+
+.mindmap .map-box .other .bottom .line01{
+    position: absolute;
+    width: 45px;
+    bottom: 22px;
+    left: -147px;
+    transform: rotate(90deg);
+}
+
+.mindmap .map-box .other .bottom .text-main{
+    position: absolute;
+    left: -143px;
+    top: 15px;
+}
+
+.mindmap .map-box .other .bottom .text-sub{
+    position: absolute;
+    left: -143px;
+    top: 59px;
+    line-height: 45px;
+    
+}
+
+/* Skills */
+
+.skills .skills-inner{
+    position: relative;
+    left: 320px;
+}
+.skills .skills-inner .box{
+    position: absolute;
+    top: -215px;
+}
+
+.skills .skills-inner .title{
+    position: absolute;
+    font-size: 65px;
+    top: -354px;
+}
+.skills .skills-inner .text{
+    position: absolute;
+    font-size: 27px;
+    top: 100px;
+
+}
+.skills .skills-inner .text-sub{
+    font-family: 'Noto Sans KR', sans-serif;
+    position: absolute;
+    font-size: 18px;
+    top: 188px;
+    text-align: center;
+}
+
+.skills .skills-inner .ps{
+    position: relative;
+    opacity: 0;
+    transition: 2s; 
+    transition-timing-function: linear;
+    top: 220px;
+    
+}
+
+.skills .skills-inner .ps.active{
+    position: relative;
+    opacity: 1;
+    top: 0px;
+
+}
+
+
+
+.skills .skills-inner .ps .box{
+    width: 250px;
+    height: 250px;
+    background-image: url(./img/ps.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 6px 6px 11px 0 rgba(0,0,0, .75);
+    border-radius: 15%;
+    left: 70px ;
+    
+} 
+.skills .skills-inner .ps .text{
+    left: 132px;
+}
+.skills .skills-inner .ps .text-sub{
+    left: 42px;
+}
+
+.skills .skills-inner .ai{
+    position: relative;
+    opacity: 0;
+    transition: 2s; 
+    transition-timing-function: linear;
+    top: 220px;
+    
+}
+
+.skills .skills-inner .ai.active{
+    position: relative;
+    opacity: 1;
+    top: 0px;
+
+}
+
+.skills .skills-inner .ai .box{
+    width: 250px;
+    height: 250px;
+    background-image: url(./img/ai.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 6px 6px 11px 0 rgba(0,0,0, .75);
+    border-radius: 15%;
+    left: 515px ;
+}
+.skills .skills-inner .ai .text{
+    left: 580px;
+}
+.skills .skills-inner .ai .text-sub{
+    left: 489px;
+}
+
+.skills .skills-inner .vs{
+    position: relative;
+    opacity: 0;
+    transition: 2s; 
+    transition-timing-function: linear;
+    top: 220px;
+    
+}
+
+.skills .skills-inner .vs.active{
+    position: relative;
+    opacity: 1;
+    top: 0px;
+
+}
+.skills .skills-inner .vs .box{
+    width: 250px;
+    height: 250px;
+    background-image: url(./img/vs.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 6px 6px 11px 0 rgba(0,0,0, .75);
+    border-radius: 15%;
+    left: 959px ;
+}
+
+.skills .skills-inner .vs .text{
+    left: 1007px;
+}
+
+.skills .skills-inner .vs .text-sub{
+    left: 917px;
+}
+
+
+/* About-Me */
+.about-me .inner{
+    position: relative;
+    left: 320px;
+    top: 15px;
+    
+}
+
+.about-me .inner .title{
+    font-size: 65px;
+}
+
+.about-me .inner .illustration{
+    position: relative;
+    top: 245px;
+    opacity: 0;
+    transition: 1.5s; 
+    transition-timing-function: linear;
+    
+}
+.about-me .inner .illustration.active{
+    opacity: 1;
+    top: -15px;
+}
+
+.about-me .inner .illustration .img{
+    position: absolute;
+    background-image: url(./img/illustration.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 600px;
+    height: 650px;
+}
+
+.about-me .inner .illustration .text-box{
+    position: relative;
+    width: 600px;
+    height: 650px;
+    opacity: 1;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+.about-me .inner .illustration .text-box:hover{
+    opacity: 0;
+    transition: 0.5s; 
+    transition-timing-function: linear;
+    
+}
+
+.about-me .inner .illustration .text-box .box{
+    position: absolute;
+    width: 600px;
+    height: 650px;
+    background-color: #222;
+    opacity: .8;
+}
+
+
+.about-me .inner .illustration .text-box .text{
+   position: absolute;
+   font-size: 23px;
+   background: linear-gradient(to bottom, #4CA1AF, #2C3E50 );
+   color: transparent;
+   -webkit-background-clip: text;
+   top: 281px;
+   left: 70px;
+}
+
+
+.about-me .inner .illustration .text-box .text-sub{
+    font-family: 'Noto Sans KR', sans-serif;
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    top: 335px;
+    left: 30px;
+}
+
+.about-me .inner .main-text{
+    font-family: 'Noto Sans KR', sans-serif;
+    position: relative;
+    left: 682px;
+    bottom: 580px;
+    font-size: 21px;
+    opacity: 0;
+    transition: 1.5s; 
+    transition-timing-function: linear;
+    bottom: 319px;
+}
+.about-me .inner .main-text.active{
+    position: relative;
+    opacity: 1;
+    bottom: 573px;
+    
+}
+
+
+.about-me .inner .main-text .main{
+    position: absolute;
+    font-size: 38px;
+}
+
+.about-me .inner .main-text .main .word2{
+    background: linear-gradient(to bottom, #4CA1AF, #2C3E50 );
+   color: transparent;
+   -webkit-background-clip: text;
+   
+}
+
+.about-me .inner .main-text .main .word4{
+    background: linear-gradient(to bottom, #4CA1AF, #2C3E50 );
+   color: transparent;
+   -webkit-background-clip: text;
+}
+
+.about-me .inner .main-text .text-box{
+    position: absolute;
+    top: 150px;
+}
+
+.about-me .inner .main-text .text-box .text02{
+    margin-top: 40px;
+}
+
+.about-me .inner .main-text .text-box .text03{
+    margin-top: 40px;
 }
