@@ -118,11 +118,10 @@ if(destination.index == 2){
 if(destination.index == 3){
   $("#fullpage .about-me .inner .illustration").addClass("active");
   $("#fullpage .about-me .inner .main-text").addClass("active");
-  $("#fullpage .skills .skills-inner .vs").addClass("active");
+
 } else {
   $("#fullpage .about-me .inner .illustration").removeClass("active");
-  $("#fullpage .about-me .inner .main-text").removeClass("active");
-  $("#fullpage .skills .skills-inner .vs").removeClass("active");        
+  $("#fullpage .about-me .inner .main-text").removeClass("active");     
 }
 
       }
