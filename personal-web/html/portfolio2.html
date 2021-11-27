@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio2</title>
+
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 풀페이지 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js" integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ==" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css" integrity="sha512-hGBKkjAVJUXoImyDezOKpzuY4LS1eTvJ4HTC/pbxn47x5zNzGA1vi3vFQhhOehWLTNHdn+2Yqh/IRNPw/8JF/A==" crossorigin="anonymous" />
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="../style.css">
+    
+    <!-- js -->
+    <script src="../script/script.js"></script>
+
+    <!-- hover css -->
+    <style type="text/css">
+    .portfolio .inner .list-box .text .word1::before{
+         content: "01. ";
+         display: none;
+     }
+     .portfolio .inner .list-box .text .word1:hover{
+         font-weight: bold;
+     }
+     .portfolio .inner .list-box .text .word1:hover::before{
+         display: inline-block;
+         font-weight: bold;
+     }
+     .portfolio .inner .list-box .text .word3:hover{
+         font-weight: bold;
+     }
+     .portfolio .inner .list-box .text .word3::before{
+         content: "03. ";
+         display: none;
+     }
+     .portfolio .inner .list-box .text .word3:hover::before{
+         display: inline-block;
+         font-weight: bold;
+     }
+     .portfolio .inner .list-box .text .word4:hover{
+         font-weight: bold;
+     }
+     .portfolio .inner .list-box .text .word4::before{
+         content: "04. ";
+         display: none;
+     }
+     .portfolio .inner .list-box .text .word4:hover::before{
+         display: inline-block;
+         font-weight: bold;
+     }
+    </style>
+    
+
+</head>
+<body>
+    <!-- Menu -->
+    <div id='header'></div>
+
+    <!-- Portfolio -->
+ <div class="portfolio">
+        <div class="inner">
+            <div class="list-box">
+                <div class="title">Portfolio</div>
+                <div class="text">
+                 <div class="word1"><a href="./portfolio1.html">Personal Website</a> </div>
+                 <div class="word2" style="font-weight: bold;"><a href="./portfolio2.html">02. Website Imitation</a></div>
+                 <div class="word3"><a href="./portfolio3.html">Website Renewal</a></div>
+                 <div class="word4"><a href="./portfolio4.html">Infographic</a></div>
+                </div>
+                <div class="main">Website Imitation</div>
+            </div>
+            <div class="imitation">
+                <div class="bg"></div>
+                <div class="mockup"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 공통메뉴 js -->
+<script>
+    $(document).ready(function () {
+        $("#header").load("./header.html", function () {
+        //페이지 별로 다른 메뉴 css 적용도 가능
+            document.getElementById("sub_nav").classList.add("show");
+        });
+    })
+</script>
+</body>
+</html>
