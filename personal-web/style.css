@@ -104,7 +104,7 @@ a{
 }
 
 .main .main-img{
-    background-image: url(./img/main.jpg);
+    background-image: url(./img/main2.png);
     width: 1920px;
     height: 1080px;
     background-size:cover;
@@ -341,7 +341,7 @@ a{
     background: linear-gradient(to bottom, #4CA1AF, #2C3E50 );
     color: transparent;
     -webkit-background-clip: text;
-    text-shadow: 0 1px  rgba(2,2,2, .5),5px 5px 11px  rgba(0,0,0, .7);
+    text-shadow:5px 5px 11px  rgba(0,0,0, .7);
 }
 
 .color-typo .typo .font-text .roboto{
@@ -352,7 +352,7 @@ a{
     background: linear-gradient(to bottom, #4CA1AF, #2C3E50 );
     color: transparent;
     -webkit-background-clip: text;
-    text-shadow: 0 1px  rgba(2,2,2, .5),5px 5px 11px  rgba(0,0,0, .7);
+    text-shadow:5px 5px 11px  rgba(0,0,0, .7);
 }
 
 .color-typo .typo .font-text .korean{
@@ -363,7 +363,7 @@ a{
     background: linear-gradient(to bottom, #4CA1AF, #2C3E50 );
     color: transparent;
     -webkit-background-clip: text;
-    text-shadow: 0 1px  rgba(2,2,2, .5),5px 5px 11px  rgba(0,0,0, .7);
+    text-shadow: 5px 5px 11px  rgba(0,0,0, .7);
 }
 /* About */
 .about{
@@ -1009,9 +1009,6 @@ a{
 .about-me .inner .illustration .text-box .text{
    position: absolute;
    font-size: 23px;
-   background: linear-gradient(to bottom, #4CA1AF, #2C3E50 );
-   color: transparent;
-   -webkit-background-clip: text;
    top: 281px;
    left: 70px;
 }
@@ -1114,7 +1111,7 @@ a{
     background: linear-gradient(to bottom, #4CA1AF, #2C3E50 );
     color: transparent;
     -webkit-background-clip: text;
-    text-shadow: 0 1px  rgba(2,2,2, .5),5px 5px 11px  rgba(0,0,0, .7);
+    text-shadow: 5px 5px 11px  rgba(0,0,0, .7);
 }
 
 .portfolio .inner .personal{
