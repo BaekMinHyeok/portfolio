@@ -338,7 +338,8 @@ a{
     font-family: 'Noto Serif Display', serif;
     position: absolute;    
     left: 165px;
-    background: linear-gradient(to bottom, #4CA1AF, #2C3E50 );
+    top: -5px;
+    background: linear-gradient(to bottom, #4CA1AF 70%, #2C3E50 );
     color: transparent;
     -webkit-background-clip: text;
     text-shadow:5px 5px 11px  rgba(0,0,0, .7);
@@ -349,7 +350,7 @@ a{
     font-family: 'Roboto', sans-serif;   
     position: absolute;
     left: 541px;
-    background: linear-gradient(to bottom, #4CA1AF, #2C3E50 );
+    background: linear-gradient(to bottom, #4CA1AF 70%, #2C3E50 );
     color: transparent;
     -webkit-background-clip: text;
     text-shadow:5px 5px 11px  rgba(0,0,0, .7);
@@ -360,7 +361,8 @@ a{
     font-family: 'Noto Sans KR', sans-serif; 
     position: absolute;  
     left: 953px;
-    background: linear-gradient(to bottom, #4CA1AF, #2C3E50 );
+    top: -7px;
+    background: linear-gradient(to bottom, #4CA1AF 70%, #2C3E50 );
     color: transparent;
     -webkit-background-clip: text;
     text-shadow: 5px 5px 11px  rgba(0,0,0, .7);
@@ -1108,18 +1110,20 @@ a{
     position: absolute;
     top: 443px;
     font-size: 55px;
-    background: linear-gradient(to bottom, #4CA1AF, #2C3E50 );
+    background: linear-gradient(to bottom, #4CA1AF 70%, #2C3E50 );
     color: transparent;
     -webkit-background-clip: text;
     text-shadow: 5px 5px 11px  rgba(0,0,0, .7);
 }
+
+/* personal */
 
 .portfolio .inner .personal{
     position: relative;
     left: 580px;
     width: 1920px;
     height: 1080px;
-    background-color: #000;
+    background-color: #222;
 }
 
 .portfolio .inner .personal .bg{
@@ -1134,7 +1138,7 @@ a{
 }
 
 .portfolio .inner .personal .mockup{
-    background-image: url(./img/Mockup1.png);
+    background-image: url(./img/Mockup.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -1142,6 +1146,9 @@ a{
     position: absolute;
     right: 587px;
 }
+
+/* imitation */
+
 .portfolio .inner .imitation{
     position: relative;
     left: 580px;
@@ -1166,6 +1173,9 @@ a{
     position: absolute;
     right: 587px;
 }
+
+/* renewal */
+
 .portfolio .inner .renewal{
     position: relative;
     left: 580px;
@@ -1189,4 +1199,44 @@ a{
     height: 100%;
     position: absolute;
     right: 587px;
+}
+
+/* infographic */
+
+.portfolio .inner .infographic{
+    position: relative;
+    left: 580px;
+    width: 1920px;
+    height: 1080px;
+}
+.portfolio .inner .infographic .grid{
+    background-image: url(./img/메타버스-그리드.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 15%;
+    background-position-x: -491px;
+    background-position-y: 482px;
+}
+.portfolio .inner .infographic .bg{
+    background-image: url(./img/메타버스-배경.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1239px;
+    position: absolute;
+    opacity: 80%;
+    background-position-x: 555px;
+    background-position-y: -187px;
+}
+.portfolio .inner .infographic .mockup{
+    background-image: url(./img/메타버스-인포그래픽.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 890px;
+    height: 930px;
+    position: absolute;
+    top: 75px;
+    right: 1069px;
+    z-index: 3;
 }
