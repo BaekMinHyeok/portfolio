@@ -23,9 +23,11 @@ function TopBar__init(){
 
 }
 
-
-
 TopBar__init();
+
+$('.top-bar .top-menu .menu ul li').click(function (){
+ $('.menu-circle').css("left","58px")
+});
 
 
 // 풀페이지
@@ -157,5 +159,27 @@ if(destination.index == 3){
   }
   slider();
 
+  // about-me 일러스트이미지 후버
+  $('.about-me .inner .illustration .text-box').mouseover(function(){
+    $('.about-me .inner .illustration .img').css({
+     "transform": "scale(1)",
+     "transition": "1.5s",
+    });
+
+  });
+
+  $('.about-me .inner .illustration .text-box').mouseout(function(){
+    $('.about-me .inner .illustration .img').css({
+     "transform": "scale(0.9)",
+     "transition": "1.5s",
+    });
+
+  });
+
+  
+ 
+
     
+
+
 });
