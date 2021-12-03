@@ -19,7 +19,7 @@ function TopBar__init(){
   });
 
   
-  $('.top-bar .top-menu .menu ul li').eq(0).mouseenter();
+  // $('.top-bar .top-menu .menu ul li').eq(0).mouseenter();
 
 }
 

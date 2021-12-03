@@ -69,6 +69,7 @@ a{
     background-color: #fff;
     top: 28%;
     transition: left .3s, width .3s;
+    left: 58px;
     
 
 }
@@ -114,12 +115,11 @@ a{
 .main .title-box{
     position: relative;
     font-size: 213px;
-    width: 1110px;
+    width: 1500px;
     height: 180px;
-    margin: 0 auto;
     display: flex;
     top: 25%;
-    right: 21px;
+    right: -394px;
 }
 .main .title-box .title{
     position: absolute;
@@ -1320,4 +1320,17 @@ a{
     top: 75px;
     right: 1069px;
     z-index: 3;
+}
+
+
+/* 화면 너비 576px */
+
+@media(max-width:576px){
+   .top-bar{
+     width: 100%;
+   }
+
+   .top-bar .top-menu{
+       width: 100%;
+   }
 }
