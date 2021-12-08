@@ -849,7 +849,7 @@ a{
 .skills .skills-inner .ps{
     position: relative;
     opacity: 0;
-    transition: 2s; 
+    transition: 1s; 
     transition-timing-function: linear;
     top: 220px;
     
@@ -885,7 +885,7 @@ a{
 .skills .skills-inner .ai{
     position: relative;
     opacity: 0;
-    transition: 2s; 
+    transition: 1s; 
     transition-timing-function: linear;
     top: 220px;
     
@@ -918,7 +918,7 @@ a{
 .skills .skills-inner .vs{
     position: relative;
     opacity: 0;
-    transition: 2s; 
+    transition: 1s; 
     transition-timing-function: linear;
     top: 220px;
     
@@ -966,7 +966,7 @@ a{
     position: relative;
     top: 245px;
     opacity: 0;
-    transition: 1.5s; 
+    transition: 1s; 
     transition-timing-function: linear;
     
 }
@@ -1035,7 +1035,7 @@ a{
     bottom: 580px;
     font-size: 21px;
     opacity: 0;
-    transition: 1.5s; 
+    transition: 1s; 
     transition-timing-function: linear;
     bottom: 319px;
 }
