@@ -41,7 +41,7 @@ a{
 }
 
 .top-bar .top-menu .logo .logo-img {
-    background-image: url(./img/logo-w.png);
+    background-image: url(../img/logo-w.png);
     width: 55.37px;
     height: 59.86px;
     background-size:cover;
@@ -49,7 +49,7 @@ a{
     background-position:center;
 }
 .top-bar .top-menu .logo .logo-img:hover {
-    background-image: url(./img/logo.png);
+    background-image: url(../img/logo.png);
     width: 55.37px;
     height: 59.86px;
 }
@@ -105,7 +105,7 @@ a{
 }
 
 .main .main-img{
-    background-image: url(./img/main2.png);
+    background-image: url(../img/main2.png);
     width: 1920px;
     height: 1080px;
     background-size:cover;
@@ -136,7 +136,7 @@ a{
 }
 
 .branding .branding-img{
-    background-image: url(./img/3d-logo.png);
+    background-image: url(../img/3d-logo.png);
     width: 1920px;
     height: 100%;
     background-repeat: no-repeat;
@@ -175,7 +175,7 @@ a{
 }
 
 .concept .concept-inner .concept-img{
-    background-image: url(./img/3d-logo-s.png);
+    background-image: url(../img/3d-logo-s.png);
     width: 645px;
     height: 423px;
     background-repeat: no-repeat;
@@ -389,7 +389,7 @@ a{
 }
 
 .about .about-box .img{
-    background-image: url(./img/About-main.png);
+    background-image: url(../img/About-main.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 600px;
@@ -867,7 +867,7 @@ a{
 .skills .skills-inner .ps .box{
     width: 250px;
     height: 250px;
-    background-image: url(./img/ps.png);
+    background-image: url(../img/ps.png);
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 6px 6px 11px 0 rgba(0,0,0, .75);
@@ -901,7 +901,7 @@ a{
 .skills .skills-inner .ai .box{
     width: 250px;
     height: 250px;
-    background-image: url(./img/ai.png);
+    background-image: url(../img/ai.png);
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 6px 6px 11px 0 rgba(0,0,0, .75);
@@ -933,7 +933,7 @@ a{
 .skills .skills-inner .vs .box{
     width: 250px;
     height: 250px;
-    background-image: url(./img/vs.png);
+    background-image: url(../img/vs.png);
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 6px 6px 11px 0 rgba(0,0,0, .75);
@@ -977,7 +977,7 @@ a{
 
 .about-me .inner .illustration .img{
     position: absolute;
-    background-image: url(./img/illustration.png);
+    background-image: url(../img/illustration.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 600px;
@@ -1204,7 +1204,7 @@ a{
 }
 
 .portfolio .inner .personal .bg{
-    background-image: url(./img/main2.png);
+    background-image: url(../img/main2.png);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -1215,7 +1215,7 @@ a{
 }
 
 .portfolio .inner .personal .mockup{
-    background-image: url(./img/Mockup.png);
+    background-image: url(../img/Mockup.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -1234,7 +1234,7 @@ a{
     top: -85px;
 }
 .portfolio .inner .imitation .bg{
-    background-image: url(./img/posco.jpg);
+    background-image: url(../img/posco.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -1243,7 +1243,7 @@ a{
     background-position-x: -856px;
 }
 .portfolio .inner .imitation .mockup{
-    background-image: url(./img/Mockup2.png);
+    background-image: url(../img/Mockup2.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -1262,7 +1262,7 @@ a{
     top: -85px;
 }
 .portfolio .inner .renewal .bg{
-    background-image: url(./img/hm-bg.jpg);
+    background-image: url(../img/hm-bg.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -1271,7 +1271,7 @@ a{
     background-position-x: -502px;
 }
 .portfolio .inner .renewal .mockup{
-    background-image: url(./img/Mockup3.png);
+    background-image: url(../img/Mockup3.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -1291,7 +1291,7 @@ a{
 
 }
 .portfolio .inner .infographic .grid{
-    background-image: url(./img/메타버스-그리드.png);
+    background-image: url(../img/메타버스-그리드.png);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -1301,7 +1301,7 @@ a{
     background-position-y: 482px;
 }
 .portfolio .inner .infographic .bg{
-    background-image: url(./img/메타버스-배경.png);
+    background-image: url(../img/메타버스-배경.png);
     background-repeat: no-repeat;
     width: 100%;
     height: 1239px;
@@ -1311,7 +1311,7 @@ a{
     background-position-y: -187px;
 }
 .portfolio .inner .infographic .mockup{
-    background-image: url(./img/메타버스-인포그래픽.png);
+    background-image: url(../img/메타버스-인포그래픽.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 890px;
@@ -1323,14 +1323,13 @@ a{
 }
 
 
-/* 화면 너비 576px */
 
-@media(max-width:576px){
-   .top-bar{
-     width: 100%;
-   }
 
-   .top-bar .top-menu{
-       width: 100%;
-   }
+/* personal-process */
+
+
+.personal-process{
+    overflow-y: scroll;
+    width: 1920px;
+    height: 1080px;
 }

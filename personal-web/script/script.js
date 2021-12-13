@@ -25,9 +25,9 @@ function TopBar__init(){
 
 TopBar__init();
 
-$('.top-bar .top-menu .menu ul li').click(function (){
- $('.menu-circle').css("left","58px")
-});
+  $('.top-bar .top-menu .menu ul li').click(function (){
+   $('.menu-circle').css("left","58px")
+  });
 
 
 // 풀페이지
