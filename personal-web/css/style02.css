@@ -112,6 +112,8 @@ a{
 .personal-process .first-page .text-box{
     margin-left: 320px;
     margin-top: 130px;
+    position: relative;
+    top: 110px;
 }
 
 .personal-process  .text-box .main{
@@ -127,6 +129,8 @@ a{
 .personal-process .first-page .img-box{
     margin-left: 410px;
      margin-top: 20px;
+     position: relative;
+     top: 100px;
 }
 
 
@@ -138,8 +142,9 @@ a{
 }
 .personal-process .second-page {
     position: relative;
-    margin-top: 100px;
+    margin-top: 175px;
     margin-left: 80px;
+
 
 }
 .personal-process .second-page .text-box{
