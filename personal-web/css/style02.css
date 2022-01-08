@@ -113,7 +113,7 @@ a{
     margin-left: 320px;
     margin-top: 130px;
     position: relative;
-    top: 110px;
+    top: 60px;
 }
 
 .personal-process  .text-box .main{
@@ -127,14 +127,14 @@ a{
 }
 
 .personal-process .first-page .img-box{
-    margin-left: 410px;
+    margin-left: 450px;
      margin-top: 20px;
      position: relative;
      top: 100px;
 }
 
 
-/* .second-page */
+/* second-page */
 .personal-process .color-box{
     background-color: #ededed;
     width: 1920px;
@@ -144,6 +144,7 @@ a{
     position: relative;
     margin-top: 175px;
     margin-left: 80px;
+    top: 45px;
 
 
 }
@@ -161,4 +162,77 @@ a{
     position: absolute;
     top: 200px;
     left: 910px;
+}
+
+
+/* third-page */
+.personal-process .third-page{
+    position: relative;
+    top: 170px;
+    left: 80px;
+    width: 1920px;
+    height: 935px;
+}
+
+.personal-process .third-page .text-box{
+    position: absolute;
+    top: 100px;
+
+}
+
+.personal-process .third-page .img-box01{
+    position: absolute;
+    top: 200px;
+}
+.personal-process .third-page .img-box02{
+    position: absolute;
+    top: 100px;
+    left: 910px;
+}
+
+
+/* fourth-page */
+
+.personal-process .color-box{
+    background-color: #ededed;
+    width: 1920px;
+    height: 935px;
+}
+.personal-process .fourth-page {
+    position: relative;
+    margin-top: 175px;
+    margin-left: 80px;
+    top: 45px;
+
+
+}
+.personal-process .fourth-page .text-box{
+    position: absolute;
+    left: 900px;
+    top: 100px;
+}
+.personal-process .fourth-page .img-box01{
+    position: absolute;
+    top: 100px;
+}
+
+.personal-process .fourth-page .img-box02{
+    position: absolute;
+    top: 200px;
+    left: 910px;
+}
+
+/* img-shadow */
+
+.img-box01{
+    width: 849px;
+    height: 478px;
+    box-shadow: 6px 6px 11px 0 rgba(0,0,0, .75);  
+    
+}
+
+.img-box02{
+    box-shadow: 6px 6px 11px 0 rgba(0,0,0, .75);       
+    width: 849px;
+    height: 478px;
 }
