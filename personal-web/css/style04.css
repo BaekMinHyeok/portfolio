@@ -103,10 +103,10 @@ a{
 }
 .renewal-process  .text-box .main{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 50px;
 }
 .renewal-process  .text-box .text{
-    font-size: 18px;
+    font-size: 26px;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -115,72 +115,19 @@ a{
 .renewal-process .first-page {
     position: relative;
     top: 170px;
-    left: 370px;
+    left: 180px;
 }
 
 .renewal-process .first-page .text-box{
     position: relative;
-    top: -28px;
+    top: 80px;
+    left: 690px;
 }
 .renewal-process .first-page .img-box01{
-    box-shadow: 6px 6px 11px 0 rgba(0,0,0, .75);
-    width: 1200px;
-    height: 714px; 
-}
-/* second-page */
-.renewal-process .second-page {
-    position: relative;
-    top: 340px;
-    left: 370px;
+    width: 890px;
+    height: 930px; 
+    position: absolute;
+    top: -70px;
 }
 
-.renewal-process .second-page .text-box{
-    position: relative;
-      
-}
-
-.renewal-process .second-page .img-box02{
-    box-shadow: 6px 6px 11px 0 rgba(0,0,0, .75);
-    width: 1200px;
-    height: 520px; 
-    margin-top: 30px;
-}
-
-/* third-page */
-.renewal-process .third-page {
-    position: relative;
-    top: 380px;
-    left: 370px;
-}
-.renewal-process .third-page .img-box03{
-    box-shadow: 6px 6px 11px 0 rgba(0,0,0, .75);
-    width: 1200px;
-    height: 520px; 
-    margin-top: 30px;
-}
-
-/* fourth-page */
-.renewal-process .fourth-page {
-    position: relative;
-    top: 435px;
-    left: 370px;
-}
-.renewal-process .fourth-page .img-box04{
-    box-shadow: 6px 6px 11px 0 rgba(0,0,0, .75);
-    width: 1200px;
-    height: 400px; 
-    margin-top: 30px;
-}
-
-/* fifth-page */
-.renewal-process .fifth-page {
-    position: relative;
-    top: 480px;
-    left: 370px;
-}
-.renewal-process .fifth-page .img-box05{
-    box-shadow: 6px 6px 11px 0 rgba(0,0,0, .75);
-    width: 1200px;
-    height: 520px; 
-}
 
